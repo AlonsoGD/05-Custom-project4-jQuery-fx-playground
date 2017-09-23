@@ -22,13 +22,15 @@ footer {
     font-size: 12pt; }
 
 .playground {
-  height: 300px; }
+  height: 300px;
+  border: 2px solid black;
+  margin: 0px 20px; }
 
 .dummy {
   background-color: #71FFF8;
   position: relative;
-  margin: auto;
-  margin-top: 5%;
+  left: 45%;
+  top: 22%;
   height: 150px;
   width: 150px;
   box-shadow: 2px 2px 22px 1px #5e5e5e; }
@@ -36,5 +38,8 @@ footer {
 .dropdown-button {
   padding-right: 10px;
   padding-left: 20px; }
+
+.buttonsrow {
+  margin-top: 20px; }
 
 /*# sourceMappingURL=style.css.map */
