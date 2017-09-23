@@ -1,0 +1,48 @@
+$pageColor: #FDE4EE;
+
+h1 {
+    font-size: 42pt;
+}
+
+body {
+    background-color: $pageColor;
+    //font-family: 'Paytone One', Arial, sans-serif;
+    font-size: 16pt;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+  }
+
+footer {
+    //min-height: 35px !important;
+    text-align: right;
+    padding: 10px;
+    background-color: #efefef;
+    font-size: 12pt;
+
+    .footerlinks {
+        padding: 10px;
+        color: black;
+        font-size: 12pt;
+    }
+}
+.playground {
+    height: 300px;
+}
+
+.dummy {
+    background-color: #71FFF8;
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+    height: 150px;
+    width: 150px;
+}
+
+.buttonsrow {
+
+}
