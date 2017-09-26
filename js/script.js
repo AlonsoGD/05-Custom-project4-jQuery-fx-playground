@@ -24,21 +24,47 @@ $(document).ready(function() {
         function clipFx() {
             $dummy.toggle( "clip" );
         },
+
+        function pulsateFx() {
+            $dummy.toggle( "pulsate" );
+        },
+
+        function scaleFx() {
+            $dummy.toggle( "scale" );
+        },
+
+        function shakeFx() {
+            $dummy.effect( "shake" );
+        },
+
+        function foldFx() {
+            $dummy.toggle( "fold" );
+        },
+
+        function explodeFx() {
+            $dummy.toggle( "explode" );
+        },
+
+        function fadeFx() {
+            $dummy.toggle( "fade" );
+        },
+
+        function puffFx() {
+            $dummy.toggle( "puff" );
+        },
+
+        function slideFx() {
+            $dummy.slideToggle( "slow" );
+        },
     ];    
 
     function reseting() {
         var $dummyClass = $dummy.attr("class");
-
         if ($dummyClass !== "dummy") {
             $dummy.parent().html('<div class="dummy"></div>');
         };
         $dummy = $(".dummy");
     };
-
-    function effectFx() {
-        
-    };
-
     ////////////////////////////////////////////////////////////////////////////////////////////////////////
     $resetBtn.click(function() {
         reseting();        
@@ -58,7 +84,7 @@ $(document).ready(function() {
     //into the array and add the <li> item in the dropdown menu following the naming rule for the function.
     $applyBtn.click(function() {
         for (var i = 0; i < $effectsArr.length; i++) {
-            if ($effectsArr[i].name == $liText) {
+            if ($effectsArr[i].name === $liText) {
                 $effectsArr[i]();
                 break;
             };
