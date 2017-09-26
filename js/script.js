@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    var $effectSelector = $("#effectSelector");
-    var $dummy = $(".dummy");
+    var $effectSelector = $("#effectSelector"); //dropdown button
+    var $dummy = $(".dummy"); //the blue square that is going to be used to show the animations.
     var $applyBtn = $("#applyBtn");
     var $resetBtn = $("#resetBtn");
     var $liText = "";
@@ -17,6 +17,14 @@ $(document).ready(function() {
         });
     };   
     
+    function bounceFx() {
+        $dummy.toggle( "bounce", { times: 3 }, "slow" );
+    };
+
+    function clipFx() {
+        $dummy.toggle( "clip" );
+    };
+
     function reseting() {
         var $dummyClass = $dummy.attr("class");
 
@@ -37,10 +45,9 @@ $(document).ready(function() {
 
     $("li").click(function() {
         // This code changes the content of the Dropdown selector button according to the choice made in the menu.
+        // Also sets the variable $liText that will allow the apply button to apply the selected effect.
         $liText = $(this).text();
         $effectSelector.children().first().text($liText);
-        //
-        
     });
 
     $applyBtn.click(function() {
@@ -51,6 +58,18 @@ $(document).ready(function() {
             case "Draggable":
                 draggableFx();
                 break;
+            case "Bounce":
+                bounceFx();
+                break;
+            case "Clip":
+                clipFx();
+                break;
+            case "Bounce":
+                bounceFx();
+                break;
+            case "Bounce":
+                bounceFx();
+                break;               
         };
     });
 });
