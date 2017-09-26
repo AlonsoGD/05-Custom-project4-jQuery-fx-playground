@@ -6,7 +6,6 @@ h1 {
 
 body {
     background-color: $pageColor;
-    //font-family: 'Paytone One', Arial, sans-serif;
     font-size: 16pt;
     display: flex;
     min-height: 100vh;
@@ -18,7 +17,6 @@ main {
   }
 
 footer {
-    //min-height: 35px !important;
     text-align: right;
     padding: 10px;
     background-color: #efefef;
@@ -43,15 +41,14 @@ footer {
     box-shadow: 2px 2px 22px 1px rgba(94,94,94,1);
 }
 
-.dropdown-button {
-    padding-right: 10px;
-    padding-left: 20px;
-}
-
 .buttonsrow {
     margin-top: 20px;
 }
 
-.btn {
-    margin: 10px;
+#applyBtn {
+    margin: 5px;
+}
+
+#resetBtn {
+    @extend #applyBtn;
 }
