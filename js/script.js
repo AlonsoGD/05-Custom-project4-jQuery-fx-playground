@@ -4,6 +4,7 @@ $(document).ready(function() {
     var $applyBtn = $("#applyBtn");
     var $resetBtn = $("#resetBtn");
     var $liText = "";
+    //This is the array where I store all the effects that are going to be usable. Later I explain why I did it this way.
     var $effectsArr = [
         function draggableFx() {
             $dummy.draggable({

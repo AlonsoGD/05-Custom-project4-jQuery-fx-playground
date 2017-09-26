@@ -22,7 +22,7 @@ footer {
     font-size: 12pt; }
 
 .playground {
-  height: 400px;
+  height: 350px;
   border: 2px solid black;
   margin: 0px 20px; }
 
@@ -37,5 +37,10 @@ footer {
 
 #applyBtn, #resetBtn {
   margin: 5px; }
+
+.switch {
+  margin: 0px 20px;
+  padding-top: 10px;
+  font-size: 12pt; }
 
 /*# sourceMappingURL=style.css.map */

@@ -29,7 +29,7 @@ footer {
     }
 }
 .playground {
-    height: 400px;
+    height: 350px;
     border: 2px solid black;
     margin: 0px 20px;
 }
@@ -52,3 +52,17 @@ footer {
 #resetBtn {
     @extend #applyBtn;
 }
+
+.switch {
+    margin: 0px 20px;
+    padding-top: 10px;
+    font-size: 12pt;
+}
+
+// #resizableSwitch {
+//     float: left;
+// }
+
+// #drageableSwitch {
+//     float: right;
+// }

@@ -28,7 +28,7 @@
     </header>
     <main>
         <div class="row center">
-            <div id="effectSelector" class="dropdown-button btn " href="#" data-activates="dropdown1" data-beloworigin="true">
+            <div id="effectSelector" class="dropdown-button btn center " href="#" data-activates="dropdown1" data-beloworigin="true">
                <span>Select animation or effect</span><i class="fa fa-caret-down right" aria-hidden="true"></i>
             </div>
             <!-- Dropdown menu -->
@@ -45,13 +45,27 @@
                 <li><a href="#!">Fade</a></li>
                 <li><a href="#!">Slide</a></li>
             </ul>
+            <div class="">
+                <div id="resizableSwitch" class="switch"><span>Resizable</span>
+                    <label>
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    </label>
+                </div>
+                <div id="drageableSwitch" class="switch"><span>Drageable</span>
+                    <label>                  
+                    <input type="checkbox">
+                    <span class="lever"></span>                  
+                    </label>
+                </div>
+            </div>
         </div>
         <div class="playground center">
             <div class="dummy"></div> <!-- Blue square that is going to be affected by the effects -->
         </div>
         <div class="container row center buttonsrow">
-            <button id="applyBtn" class="btn waves-effect waves-light s12 m6 l3">APPLY!</button>
-            <button id="resetBtn" class="btn waves-effect waves-light s12 m6 l3">RESET!</button>
+            <button id="applyBtn" class="btn waves-effect waves-light">APPLY!</button>
+            <button id="resetBtn" class="btn waves-effect waves-light">RESET!</button>
         </div>
     </main>
     <footer>
