@@ -32,14 +32,10 @@ footer {
   width: 120px;
   box-shadow: 2px 2px 22px 1px #5e5e5e; }
 
-.dropdown-button {
-  padding-right: 10px;
-  padding-left: 20px; }
-
 .buttonsrow {
   margin-top: 20px; }
 
-.btn {
-  margin: 10px; }
+#applyBtn, #resetBtn {
+  margin: 5px; }
 
 /*# sourceMappingURL=style.css.map */
