@@ -3,20 +3,17 @@ $(document).ready(function() {
     var $dummy = $(".dummy");
     var $applyBtn = $("#applyBtn");
     var $resetBtn = $("#resetBtn");
+    var $liText = "";
 
     function draggableFx() {
-        $applyBtn.click(function() {
-            $dummy.draggable({
-                containment: ".playground",
-            });
+        $dummy.draggable({
+            containment: ".playground",
         });
     };
 
     function resizableFx() {
-        $applyBtn.click(function() {
-            $dummy.resizable({
-                containment: ".playground",
-            });
+        $dummy.resizable({
+            containment: ".playground",
         });
     };   
     
@@ -40,9 +37,13 @@ $(document).ready(function() {
 
     $("li").click(function() {
         // This code changes the content of the Dropdown selector button according to the choice made in the menu.
-        var $liText = $(this).text();
+        $liText = $(this).text();
         $effectSelector.children().first().text($liText);
         //
+        
+    });
+
+    $applyBtn.click(function() {
         switch ($liText) {
             case "Resizable": 
                 resizableFx();
@@ -50,9 +51,6 @@ $(document).ready(function() {
             case "Draggable":
                 draggableFx();
                 break;
-            default:
-                alert("default");
         };
-
     });
 });
