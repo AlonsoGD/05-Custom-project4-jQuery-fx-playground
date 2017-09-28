@@ -7,7 +7,7 @@ $(document).ready(function() {
     var $resizableSwitch = $("#resizableSwitch");
     var $drageableSwitch = $("#drageableSwitch");
     //This is the array where I store all the effects that are going to be usable. Later I explain why I did it in this way.
-    var $effectsArr = [
+    var effectsArr = [
         function draggableFx() {
             $dummy.draggable({
                 containment: ".playground",
@@ -86,7 +86,7 @@ $(document).ready(function() {
                 disabled: true,
             });
         } else {
-            $effectsArr[1]();
+            effectsArr[1]();
         }
     });
 
@@ -96,7 +96,7 @@ $(document).ready(function() {
                 disabled: true,
             });
         } else {
-            $effectsArr[0]();
+            effectsArr[0]();
         }
     });
 
@@ -113,9 +113,9 @@ $(document).ready(function() {
     //if you maintain the same "naming rule" for the fuction (same text than the li menu item  + Fx) the apply button will always work. So to add a new effect, you just have to write the fuction
     //into the array and add the <li> item in the dropdown menu following the naming rule for the function.
     $applyBtn.click(function() {     
-        for (var i = 0; i < $effectsArr.length; i++) {
-            if ($effectsArr[i].name === $liText) {
-                $effectsArr[i]();
+        for (var i = 0; i < effectsArr.length; i++) {
+            if (effectsArr[i].name === $liText) {
+                effectsArr[i]();
                 break;
             };
         }       
